@@ -18,6 +18,13 @@ The dataset consists of:
   - We specifically use the **30-day SPEI (spei30)** data at 0.25° spatial resolution from 1982 to 2021.
   - Data is based on ERA5 precipitation and Singer's potential evapotranspiration.
   - Available in NetCDF format.
+- **NINO Index**: ENSO-related index from NOAA PSL ([Link](https://psl.noaa.gov/enso/dashboard.html)) used as an additional predictor for drought forecasting.
+The dataset consists of:
+- **NCEP-NCAR Reanalysis 1**: Meteorological features.
+- **SPEI-GD Dataset**: The first global multi-scale daily SPEI dataset (Zenodo DOI: [10.5281/zenodo.8060268](https://doi.org/10.5281/zenodo.8060268)).
+  - We specifically use the **30-day SPEI (spei30)** data at 0.25° spatial resolution from 1982 to 2021.
+  - Data is based on ERA5 precipitation and Singer's potential evapotranspiration.
+  - Available in NetCDF format.
 
 ## Models
 The repository includes the following categories of models:
