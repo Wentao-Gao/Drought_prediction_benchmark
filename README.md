@@ -77,6 +77,9 @@ The repository includes the following categories of models:
 | Method | Description |
 |--------|-------------|
 | TimesFM | Large-scale foundation model for time-series forecasting. |
+| TabPFN_TS | Transformer-based foundation model for probabilistic time-series forecasting. |
+| TimeGPT | Pre-trained generative time-series model. |
+| ClimaX | Foundation model specialized in climate forecasting. |
 | Other Pre-trained Models | Exploration of pre-trained foundation models for drought prediction. |
 
 ## Installation
