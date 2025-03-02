@@ -72,6 +72,13 @@ The repository includes the following categories of models:
 | SegRNN | Segment-based recurrent model. |
 | TSMixer | Mixing model for time-series. |
 | Temporal Fusion Transformer | Hybrid Transformer with interpretable attention. |
+| TiDE | Time-series model combining local and global representations. |
+| TimeMixer | Mixer-based model optimized for time-series forecasting. |
+| TimeXer | Transformer variant designed for extreme-scale time-series learning. |
+| TimesNet | Neural network specifically designed for time-series prediction. |
+| Transformer | Standard Transformer architecture applied to time-series. |
+| WPMixer | Wavelet-based Patch Mixer model. |
+| iTransformer | Improved Transformer model for time-series applications. |
 
 ### Foundation Models
 | Method | Description |
