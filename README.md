@@ -21,10 +21,63 @@ The dataset consists of:
 
 ## Models
 The repository includes the following categories of models:
-- **Baseline Models**: ARIMA, Persistence Model, Linear Regression.
-- **Machine Learning Models**: Random Forest, XGBoost, LSTM, Transformer-based architectures.
-- **Foundation Models**: TimesFM and other large-scale pre-trained models.
-- **Hybrid Approaches**: Combining domain adaptation techniques with traditional forecasting.
+
+### Traditional Models
+| Method | Description |
+|--------|-------------|
+| ARIMA | AutoRegressive Integrated Moving Average, a widely used time-series forecasting model. |
+| Persistence Model | Assumes future values remain the same as the last observed value. |
+| Linear Regression | A simple statistical model using past data trends. |
+| Holt-Winters | Exponential smoothing model capturing trend and seasonality. |
+| SARIMA | Seasonal ARIMA, an extension of ARIMA for handling seasonality. |
+| Prophet | Developed by Facebook, designed for time-series forecasting with strong seasonality. |
+
+### Machine Learning Models
+| Method | Description |
+|--------|-------------|
+| Random Forest | Ensemble learning method using multiple decision trees. |
+| XGBoost | Extreme Gradient Boosting, highly efficient tree-based model. |
+| LightGBM | A faster and scalable gradient boosting method optimized for large datasets. |
+
+### Deep Learning Models
+| Method | Description |
+|--------|-------------|
+| LSTM | Long Short-Term Memory, a type of recurrent neural network (RNN) suitable for sequential data. |
+| GRU | Gated Recurrent Unit, a variant of LSTM with fewer parameters. |
+| TCN | Temporal Convolutional Network, a CNN-based model for sequential tasks. |
+
+### Transformer-based Models
+| Method | Description |
+|--------|-------------|
+| Autoformer | Transformer-based model with autocorrelation mechanism for long-term forecasting. |
+| Crossformer | Cross-scale attention-based Transformer for multiscale time-series learning. |
+| DLinear | Decomposition-based Linear Transformer alternative. |
+| ETSformer | Exponential Smoothing Transformer for interpretable forecasting. |
+| FEDformer | Frequency Enhanced Decomposition Transformer. |
+| FiLM | Feature-wise Linear Modulation-based Transformer. |
+| FreTS | Frequency Transformer for time-series forecasting. |
+| Informer | Sparse self-attention Transformer for efficient long-sequence forecasting. |
+| Koopa | Attention-based forecasting model optimized for spatiotemporal datasets. |
+| LightTS | Lightweight Transformer model for efficiency. |
+| MICN | Multi-Instance Contrastive Network for time-series analysis. |
+| Mamba | State-space model alternative to Transformers. |
+| MambaSimple | Simplified version of Mamba model. |
+| MultiPatchFormer | Multi-resolution Transformer model. |
+| Nonstationary Transformer | Designed for handling nonstationary time-series data. |
+| PAttn | Probabilistic Attention Transformer. |
+| PatchTST | Patch-based Transformer for long-sequence forecasting. |
+| Pyraformer | Pyramid attention-based Transformer. |
+| Reformer | Memory-efficient Transformer. |
+| SCINet | Self-Calibrating Convolutional Network. |
+| SegRNN | Segment-based recurrent model. |
+| TSMixer | Mixing model for time-series. |
+| Temporal Fusion Transformer | Hybrid Transformer with interpretable attention. |
+
+### Foundation Models
+| Method | Description |
+|--------|-------------|
+| TimesFM | Large-scale foundation model for time-series forecasting. |
+| Other Pre-trained Models | Exploration of pre-trained foundation models for drought prediction. |
 
 ## Installation
 ```bash
@@ -62,6 +115,7 @@ We welcome contributions! Feel free to submit pull requests for:
 - Improving preprocessing pipelines
 - Enhancing evaluation metrics
 
+
 ## Contact
-For any inquiries(including questions or potential colabration), please reach out to gaowy014@mymail.unisa.edu.au.
+For any inquiries (including questions or potential collaboration), please reach out to gaowy014@mymail.unisa.edu.au.
 
