@@ -20,7 +20,6 @@ The dataset consists of:
   - Available in NetCDF format.
 - **NINO Index**: ENSO-related index from NOAA PSL ([Link](https://psl.noaa.gov/enso/dashboard.html)) used as an additional predictor for drought forecasting.
 
-
 ## Models
 The repository includes the following categories of models:
 
@@ -49,38 +48,21 @@ The repository includes the following categories of models:
 | TCN | Temporal Convolutional Network, a CNN-based model for sequential tasks. |
 
 ### Transformer-based Models
-| Method | Description |
-|--------|-------------|
-| Autoformer | Transformer-based model with autocorrelation mechanism for long-term forecasting. |
-| Crossformer | Cross-scale attention-based Transformer for multiscale time-series learning. |
-| DLinear | Decomposition-based Linear Transformer alternative. |
-| ETSformer | Exponential Smoothing Transformer for interpretable forecasting. |
-| FEDformer | Frequency Enhanced Decomposition Transformer. |
-| FiLM | Feature-wise Linear Modulation-based Transformer. |
-| FreTS | Frequency Transformer for time-series forecasting. |
-| Informer | Sparse self-attention Transformer for efficient long-sequence forecasting. |
-| Koopa | Attention-based forecasting model optimized for spatiotemporal datasets. |
-| LightTS | Lightweight Transformer model for efficiency. |
-| MICN | Multi-Instance Contrastive Network for time-series analysis. |
-| Mamba | State-space model alternative to Transformers. |
-| MambaSimple | Simplified version of Mamba model. |
-| MultiPatchFormer | Multi-resolution Transformer model. |
-| Nonstationary Transformer | Designed for handling nonstationary time-series data. |
-| PAttn | Probabilistic Attention Transformer. |
-| PatchTST | Patch-based Transformer for long-sequence forecasting. |
-| Pyraformer | Pyramid attention-based Transformer. |
-| Reformer | Memory-efficient Transformer. |
-| SCINet | Self-Calibrating Convolutional Network. |
-| SegRNN | Segment-based recurrent model. |
-| TSMixer | Mixing model for time-series. |
-| Temporal Fusion Transformer | Hybrid Transformer with interpretable attention. |
-| TiDE | Time-series model combining local and global representations. |
-| TimeMixer | Mixer-based model optimized for time-series forecasting. |
-| TimeXer | Transformer variant designed for extreme-scale time-series learning. |
-| TimesNet | Neural network specifically designed for time-series prediction. |
-| Transformer | Standard Transformer architecture applied to time-series. |
-| WPMixer | Wavelet-based Patch Mixer model. |
-| iTransformer | Improved Transformer model for time-series applications. |
+| Method | Description | MSE | MAE |
+|--------|-------------|----|----|
+| Autoformer | Transformer-based model with autocorrelation mechanism for long-term forecasting. | 0.6995 | 0.6669 |
+| Crossformer | Cross-scale attention-based Transformer for multiscale time-series learning. | 0.6030 | 0.6575 |
+| DLinear | Decomposition-based Linear Transformer alternative. | 0.5197 | 0.5974 |
+| FiLM | Feature-wise Linear Modulation-based Transformer. | 0.7527 | 0.7505 |
+| iTransformer | Improved Transformer model for time-series applications. | 0.4974 | 0.5704 |
+| MICN | Multi-Instance Contrastive Network for time-series analysis. | 1.4579 | 0.9533 |
+| PatchTST | Patch-based Transformer for long-sequence forecasting. | 0.5336 | 0.6158 |
+| Pyraformer | Pyramid attention-based Transformer. | 0.5815 | 0.6325 |
+| TimeMixer | Mixer-based model optimized for time-series forecasting. | 0.5876 | 0.6394 |
+| TimeXer | Transformer variant designed for extreme-scale time-series learning. | 0.4124 | 0.5171 |
+| TimesNet | Neural network specifically designed for time-series prediction. | 0.6823 | 0.6957 |
+| Transformer | Standard Transformer architecture applied to time-series. | 0.6832 | 0.6758 |
+| TSMixer | Mixing model for time-series. | 0.4985 | 0.5974 |
 
 ### Foundation Models
 | Method | Description |
@@ -126,7 +108,6 @@ We welcome contributions! Feel free to submit pull requests for:
 - Adding new models
 - Improving preprocessing pipelines
 - Enhancing evaluation metrics
-
 
 ## Contact
 For any inquiries (including questions or potential collaboration), please reach out to gaowy014@mymail.unisa.edu.au.
