@@ -11,6 +11,14 @@ This repository provides a benchmark framework for predicting the Standardized P
 - **Feature Selection**: Utilizes techniques such as Granger causality and PCMCI for causal discovery.
 - **Foundation Model Exploration**: Investigates in-context learning and reinforcement learning-based approaches.
 
+### Feature engineering
+To improve the model efficiency and improve its performance in spei prediction.
+
+We tried some methods, one is granger causality and the other one is PCMCI. we find out that using granger causality, we only deleted very few features
+(1-3), But using PCMCI, we can almost delete half of the features, and reach almost same results as all features.
+
+But if we want to make a better performance, it seems that this feature selection is not enough for drought prediction.
+
 ## Data
 The dataset consists of meteorological and climate-related variables used for drought prediction. The main data sources are:
 
@@ -159,29 +167,11 @@ The repository includes the following categories of models:
 | ClimaX | Foundation model specialized in climate forecasting. |
 | Other Pre-trained Models | Exploration of pre-trained foundation models for drought prediction. |
 
-## Installation
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/Drought_prediction_benchmark.git
-cd Drought_prediction_benchmark
-
-# Create a virtual environment
-python -m venv env
-source env/bin/activate  # On Windows use `env\Scripts\activate`
-
-# Install dependencies
-pip install -r requirements.txt
-```
 
 ## Usage
 1. **Data Preparation**: Download and preprocess datasets.
 2. **Model Training**: Run benchmark models with default or custom configurations.
 3. **Evaluation**: Compare model performance using standardized metrics.
-
-Example command to run a baseline model:
-```bash
-python train.py --model baseline --target spei_1m
-```
 
 ## Evaluation Metrics
 - Mean Absolute Error (MAE)
