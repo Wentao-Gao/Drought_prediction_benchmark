@@ -158,14 +158,20 @@ The repository includes the following categories of models:
 | Transformer | Standard Transformer architecture applied to time-series. | 0.6832 | 0.6758 |
 | TSMixer | Mixing model for time-series. | 0.4985 | 0.5974 |
 
+
+
 ### Foundation Models
-| Method | Description |
-|--------|-------------|
-| TimesFM | Large-scale foundation model for time-series forecasting. |
-| TabPFN_TS | Transformer-based foundation model for probabilistic time-series forecasting. |
-| TimeGPT | Pre-trained generative time-series model. |
-| ClimaX | Foundation model specialized in climate forecasting. |
-| Other Pre-trained Models | Exploration of pre-trained foundation models for drought prediction. |
+| Method             | Year | Description |
+|--------------------|------|-------------|
+| **TimesFM**        | 2024 | Large-scale foundation model for time-series forecasting developed by Google DeepMind. Focuses on flexibility across domains. |
+| **TabPFN_TS**      | 2023 | Transformer-based probabilistic foundation model adapted for time-series, based on TabPFN’s architecture. |
+| **TimeGPT**        | 2023 | Pre-trained generative time-series model released by Nixtla, designed for few-shot and zero-shot forecasting. |
+| **ClimaX**         | 2023 | Foundation model for climate forecasting using masked autoencoding and hierarchical attention. |
+| **Moirai**         | 2024 | General-purpose foundation model for time series with state-space-inspired architecture, excels in long-horizon forecasting. |
+| **Chronos**        | 2024 | Time-series foundation model from AWS designed to unify traditional statistical and neural models. |
+| **Lag-Llama**      | 2024 | Long-context foundation model for time series, open-sourced and based on decoder-only transformers. |
+| **Tiny Time Mixers (TTM)** | 2024 | Lightweight and efficient time-series foundation models suitable for deployment on edge devices. |
+| **Other Pre-trained Models** | – | Exploration of various pre-trained models (e.g., from financial, weather, sensor domains) for drought prediction. |
 
 
 ## Usage
